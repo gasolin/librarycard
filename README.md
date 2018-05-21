@@ -3,13 +3,13 @@
 
 ## 使用方式
 
-1. 請連到 [https://gasolin.github.io/librarycard?id=圖書證號](https://gasolin.github.io/librarycard?id=圖書證號)，參考你手中的圖書證，將網址列中`?id=`後的`圖書證號`改成你真的圖書證號。
+1. 連到 [https://gasolin.github.io/librarycard?id=圖書證號](https://gasolin.github.io/librarycard?id=圖書證號) (參考你手中的圖書證，把網址列中`?id=`後的`圖書證號`改成你真的圖書證號，通常是身份證號後再加2位序號)。
 
-2. 將此網址設為書籤，以便之後再次使用
+2. 將此網址設為書籤，以便之後再次使用。
 
 3. 如果你覺得這樣很方便，請將以上網址和使用方式分享給你的朋友。
 
-4. 本工具完全開源並不紀錄使用者資訊。歡迎前往Github上[gasolin/librarycard](https://github.com/gasolin/librarycard)專案查看。
+4. 本工具完全開源，且不會紀錄使用者資訊。歡迎前往 https://github.com/gasolin/librarycard 專案查看。
 
 
 ## 緣起
