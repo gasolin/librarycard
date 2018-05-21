@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>圖書館借書證</title>
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/barcodes/JsBarcode.code39.min.js"></script>
+    <style>
+      svg {
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+   <span id="msg"></span>
+   <svg id="code39"></svg>
+   <script>
+     let statusCode = 200;
+     window.addEventListener('load', function() {
+       try {
+         if (!window.location.search || window.location.search === null) {
+           statusCode = 404;
+         } else {
+           let urlParams = new URLSearchParams(window.location.search);
+           let id = urlParams.get('id');
+           JsBarcode("#code39", id, {format: "code39"});
+         }
+       } catch (err) {
+          statusCode = 404;
+       }
+
+       switch(statusCode) {
+         case 404:
+           let msg = document.getElementById('msg');
+           msg.textContent = '請在網址列`?id=`符號後輸入圖書證號（第一個字母需大寫）';
+           break;
+         default:
+           break;
+       }
+     });
+   </script>
+</body>
+</html>
