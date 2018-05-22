@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/barcodes/JsBarcode.code39.min.js"></script>
     <style>
       svg {
-        margin: 30px;
+        margin: 10px;
       }
     </style>
   </head>
@@ -23,7 +23,7 @@
          } else {
            let urlParams = new URLSearchParams(window.location.search);
            let id = urlParams.get('id');
-           JsBarcode("#code39", id, {format: "code39", width: 3});
+           JsBarcode("#code39", id, {format: "code39", width: 2});
          }
        } catch (err) {
           statusCode = 404;
