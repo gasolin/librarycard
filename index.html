@@ -12,8 +12,8 @@
     </style>
   </head>
   <body>
+   <svg id="code39" width="200"></svg>
    <span id="msg"></span>
-   <svg id="code39"></svg>
    <script>
      let statusCode = 200;
      window.addEventListener('load', function() {
@@ -23,7 +23,7 @@
          } else {
            let urlParams = new URLSearchParams(window.location.search);
            let id = urlParams.get('id');
-           JsBarcode("#code39", id, {format: "code39"});
+           JsBarcode("#code39", id, {format: "code39", width: 3});
          }
        } catch (err) {
           statusCode = 404;
